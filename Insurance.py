@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import streamlit as st
 
-loaded = pickle.load(open("/Users/shwetabalasubramoni/Downloads/trained_model.sav", "rb"))
+loaded = pickle.load(open("trained_model.sav", "rb"))
 
 def insurance_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
